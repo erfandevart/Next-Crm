@@ -20,7 +20,7 @@ function AddCustomerPage() {
     const res = await fetch("/api/customer", {
       method: "POST",
       body: JSON.stringify({ data: form }),
-      headers: { "Content-Type": "appliaction/json" },
+      headers: { "Content-Type": "application/json" },
     });
     const data = await res.json();
     console.log(data);
